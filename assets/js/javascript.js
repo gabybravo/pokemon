@@ -26,14 +26,15 @@ function batalla(){
 var pokem1 = document.getElementById("poke1").value
 var pokem2 = document.getElementById("poke2").value
 
-var pelea1 = new Pokemon(pokem1, "amarillo", 100)
+var pelea1 = new Pokemon(pokem1, "amarillo", 85)
 var pelea2 = new Pokemon(pokem2, "rojo", 20)
 
 var resultado = document.getElementById("resultado")
 
 pelea1.atacar(pelea2)
 
-var textoEscrito = pelea1.nombre + " atacó a " + pelea2.nombre;
+var textoEscrito = pelea1.nombre + " atacó a " + pelea2.nombre + " y " + pelea2.nombre + " se queda con " + pelea2.vida + " de vida restante.";
 resultado.innerHTML = textoEscrito;
 }
+
 
