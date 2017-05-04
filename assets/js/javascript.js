@@ -26,6 +26,7 @@ function batalla(){
 var pokem1 = document.getElementById("poke1").value
 var pokem2 = document.getElementById("poke2").value
 
+if (pokem1 != pokem2){
 var pelea1 = new Pokemon(pokem1, "amarillo", 85)
 var pelea2 = new Pokemon(pokem2, "rojo", 20)
 
@@ -35,6 +36,9 @@ pelea1.atacar(pelea2)
 
 var textoEscrito = pelea1.nombre + " atacó a " + pelea2.nombre + " y " + pelea2.nombre + " se queda con " + pelea2.vida + " de vida restante.";
 resultado.innerHTML = textoEscrito;
+} else {
+  alert("¡El pokemón está confundido!")
+}
 }
 
 
