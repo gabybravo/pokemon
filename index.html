@@ -5,14 +5,30 @@
 	<title>Pokemón</title>
 </head>
 <body>
+	<h1>¡Batallas Pokemón!</h1>
+	
 	<p>
 	<label>Selecciona un pokemón:</label><br><br>
-	<select type="dropdown" name= "poke" id="" required>
-		<option value="0">Selecciona</option>
-		<option value="1">Pikachu</option>
-		<option value='2'>Charmander</option>
+	<select type="dropdown" id="poke1">
+		<option id="pika">Pikachu</option>
+		<option id="char">Charmander</option>
+		<option id="chiko">Chikorita</option>
+		<option id="jiggly">Jigglypuff</option>
 	</select></p>
+	
 	<p>
+	<label>Selecciona otro pokemón:</label><br><br>
+	<select type="dropdown" id="poke2">
+		<option id="pika">Pikachu</option>
+		<option id="char">Charmander</option>
+		<option id="chiko">Chikorita</option>
+		<option id="jiggly">Jigglypuff</option>
+	</select></p>
+	
+	<button onclick="batalla()">Pelear</button>
+
+	<p id="resultado"></p>
+
 <script src="assets/js/javascript.js"></script>
 </body>
 </html>
